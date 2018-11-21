@@ -1,5 +1,5 @@
 var OKTA_BASE_URL = "https://dev-842917.oktapreview.com";
-var OKTA_CLIENT_ID = "0oahnh5ai0wMErUCC0h7";
+var OKTA_CLIENT_ID = "0oahpmeuckanYrGWu0h7";
 var CHALLENGE_API = "https://reinvent18-challenge-server.herokuapp.com";
 
 var signIn = new OktaSignIn({
