@@ -92,8 +92,8 @@ To do this, open up the file `static/js/sign-in.js` in your favorite code
 editor. Modify the top two lines of the file and substitute in your org-specific
 settings.
 
-Here's what the default values look like (you will need to replace them in order
-for this to work):
+Here's what the default values look like (you will need to replace them with the
+two values you copied down earlier in order for this to work):
 
 ```javascript
 var OKTA_BASE_URL = "https://dev-842917.oktapreview.com";
