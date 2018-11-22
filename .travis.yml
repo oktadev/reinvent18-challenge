@@ -2,7 +2,7 @@ language: python
 install:
 - pip install awscli 
 script:
-- aws s3 sync . s3://reinvent18-challenge --exclude "assets/*" --exclude ".git/*" --exclude .travis.yml --exclude README.md
+- aws s3 sync . s3://reinvent18-challenge --exclude "assets/*" --exclude ".git/*" --exclude .travis.yml --exclude README.md --delete
 - aws configure set preview.cloudfront true
 - aws cloudfront create-invalidation --distribution-id E2L2AIA2F3G51O --paths "/*"
 branches:
