@@ -1,6 +1,6 @@
 language: python
 install:
-- pip install awscli 
+- pip install awscli
 script:
 - aws s3 sync . s3://reinvent18-challenge --exclude "assets/*" --exclude ".git/*" --exclude .travis.yml --exclude README.md --delete
 - aws configure set preview.cloudfront true
