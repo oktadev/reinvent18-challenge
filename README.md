@@ -105,6 +105,19 @@ information: worry not! They are **not** sensitive, private credentials. They
 can be shared publicly at no risk to you or your websites due to the way OpenID
 Connect works.
 
+The last application-specific setting you need to specify is your trusted
+origin. You need to tell Okta which URLs your app will be running on publicly so
+it knows which domains it should enable CORS for.
+
+Go to the **API** drop-down menu and select the **Trusted Origins** tab. Then
+click the **Add Origin** button and enter the following information:
+
+- **Name**: `re:Invent 2018 Challenge`
+- **Origin URL**: `http://localhost:8000`
+- **Type**: CORS + Redirect
+
+Make sure you check the boxes next to the **CORS** and **Redirect** boxes.
+
 
 ## Step 5: Run the Web App
 
